@@ -1,0 +1,107 @@
+body{
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background:lightgray;
+
+}
+
+
+.navabar{
+
+    background:lightseagreen;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.navabar ul{
+
+    list-style: none;
+    margin: 2;
+    padding: 0;
+    display: flex;
+}
+
+.navabar li{
+
+margin-right: 20px;
+}
+
+.navabar a{
+    color:dark orangered;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.03;
+
+}
+
+.navabar a :hover{
+
+    color:darkcyan;
+}
+.navabar a ::after{
+    content: none;
+    display: block;
+    width: 0;
+    height: 2 px;
+    background: #ff9800;
+    transition: 0.3 s;
+    position: absolute;
+    bottom: 5 px;
+    left: 0;
+}
+
+.navabar a :hover ::after{
+
+    width: 100;
+}
+
+.hero{
+    background: whitesmoke;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.blog-cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20 px;
+    padding: 20px;
+    max-width: 1200px;
+margin: 0 auto 40px auto;
+
+}
+
+.card{
+    background: wheat;
+    flex: 1 1 300px;
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+
+    
+
+.blog-cards > .card + .card
+{
+
+    border-left: 2px solid lightseagreen;
+    padding-left: 18px;
+
+}
+ 
+
+ .image-text-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px; 
+  margin: 20px 0;
+}
