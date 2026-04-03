@@ -11,4 +11,4 @@ class PostSerializer(serializers.ModelSerializer):
     def validate_title(self, value):
         if len(value) < 5:
             raise serializers.ValidationError("Title romba chinathaa iruku!")
-        return value
+        return value    
